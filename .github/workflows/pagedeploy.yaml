@@ -36,9 +36,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install jupyter
-      - name: Convert all notebooks to html
+      - name: Convert all notebooks to markdown
         run: |
-          jupyter nbconvert --to html --execute --output-dir ./ ./*.ipynb
+          jupyter nbconvert --to markdown --execute --output-dir ./ ./*.ipynb
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
