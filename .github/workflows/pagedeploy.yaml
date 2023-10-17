@@ -36,8 +36,13 @@ jobs:
           jupyter nbconvert --to markdown --output-dir ./temp/ ./*.ipynb
       - name: Customize Lecture pages with headers
         run: |
-          cat <(echo "---"; echo "layout: default"; echo "title: Lecture 1"; echo "description: (coverig tasks 1-4)"; echo "---"; echo "") ./temp/Lecture1.md > Lecture1.md
+          cat <(echo "---"; echo "layout: default"; echo "title: Lecture 1"; echo "description: (coverig tasks 1-4)"; echo "---"; echo ""; echo "**| [Main Page](./index.html) | [Lecture 1](./Lecture1.html) |**") ./temp/Lecture1.md > Lecture1.md
           cat Lecture1.md
+      - name: Customize README
+        run: |
+          cp README.md temp/README.md
+          cat <(echo "**| [Main Page](./index.html) | [Lecture 1](./Lecture1.html) |**") ./temp/README.md > README.md
+          cat README.md
       # README-related tasks
       - name: Setup Pages
         uses: actions/configure-pages@v3
