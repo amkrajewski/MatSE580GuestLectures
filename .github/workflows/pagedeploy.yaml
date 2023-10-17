@@ -33,7 +33,7 @@ jobs:
           pip install jupyter
       - name: Convert all notebooks to markdown
         run: |
-          jupyter nbconvert --to markdown --execute --output-dir ./temp/ ./*.ipynb
+          jupyter nbconvert --to markdown --output-dir ./temp/ ./*.ipynb
       - name: Customize Lecture pages with headers
         run: |
           cat <(echo "---"; echo "layout: default"; echo "title: Lecture 1"; echo "description: (coverig tasks 1-4)"; echo "---"; echo "") ./temp/Lecture1.md > Lecture1.md
