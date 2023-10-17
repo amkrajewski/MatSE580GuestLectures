@@ -1,0 +1,8 @@
+title: MatSE580 Guest Lectures
+description: Two guest lectures for MatSE580 at PSU to cover basics of (1) materials data manipulation and storage and (2) running ML methods on them.
+show_downloads: "true"
+markdown: GFM
+
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme 
