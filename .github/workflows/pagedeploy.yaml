@@ -39,6 +39,10 @@ jobs:
       - name: Convert all notebooks to markdown
         run: |
           jupyter nbconvert --to markdown --execute --output-dir ./ ./*.ipynb
+      - name: Customize Lecture pages with headers
+        run: |
+          cat <(echo "---"; echo "layout: default"; echo "title: Lecture 1"; echo "") Lecture1.md > Lecture1.md
+          cat Lecture1.md
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
