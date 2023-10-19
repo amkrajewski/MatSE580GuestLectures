@@ -37,11 +37,11 @@ jobs:
           jupyter nbconvert --to html --output-dir ./jupyters/ ./*.ipynb
       - name: Customize Lecture pages with headers
         run: |
-          cat <(echo "---"; echo "layout: default"; echo "title: Lecture No.1"; echo "description: (coverig tasks 1-4)"; echo "---"; echo ""; echo "**| [Main Page](./index.html) | [Lecture 1](./Lecture1.html) ([native render](./jupyters/Lecture1.html)) | [Lecture 2](./Lecture2.html) ([native render](./jupyters/Lecture2.html)) |**") ./temp/Lecture1.md > Lecture1.md
+          cat <(echo "---"; echo "layout: doc"; echo "title: Lecture No.1"; echo "description: (coverig tasks 1-4)"; echo "---"; echo ""; echo "**| [Main Page](./index.html) | [Lecture 1](./Lecture1.html) ([native render](./jupyters/Lecture1.html)) | [Lecture 2](./Lecture2.html) ([native render](./jupyters/Lecture2.html)) |**") ./temp/Lecture1.md > Lecture1.md
           sed -i '/# MatSE580 Guest Lecture 1/d' Lecture1.md
           cat Lecture1.md
 
-          cat <(echo "---"; echo "layout: default"; echo "title: Lecture No.2"; echo "description: (coverig tasks 4-5)"; echo "---"; echo ""; echo "**| [Main Page](./index.html) | [Lecture 1](./Lecture1.html) ([native render](./jupyters/Lecture1.html)) | [Lecture 2](./Lecture2.html) ([native render](./jupyters/Lecture2.html)) |**") ./temp/Lecture2.md > Lecture2.md
+          cat <(echo "---"; echo "layout: doc"; echo "title: Lecture No.2"; echo "description: (coverig tasks 4-5)"; echo "---"; echo ""; echo "**| [Main Page](./index.html) | [Lecture 1](./Lecture1.html) ([native render](./jupyters/Lecture1.html)) | [Lecture 2](./Lecture2.html) ([native render](./jupyters/Lecture2.html)) |**") ./temp/Lecture2.md > Lecture2.md
           sed -i '/# MatSE580 Guest Lecture 2/d' Lecture2.md
           cat Lecture2.md
       - name: Customize README
