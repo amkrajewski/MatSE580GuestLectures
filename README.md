@@ -2,14 +2,33 @@
 ## Contents
 In this two lectures I will give in **Fall 2023 MatSE 580 (Computational Thermodynamics)** at Penn State, which together should provide students with some basic skills in:
 1. Manipulating and analyzing materials - using [pymatgen](https://github.com/materialsproject/pymatgen)
+
+<p align="center">
+  <img src="assets/112-Cr12Fe10Ni8.png" width="300"/>
+</p><br>
+
 2. Setting up a small NoSQL database on the cloud to synchronize decentralized processing - using [MongoDB Atlas](https://www.mongodb.com/atlas) Free Tier
 3. Interacting with the database and visualizing the results - using [pymongo](https://github.com/mongodb/mongo-python-driver) library and [MongoDB Charts](https://www.mongodb.com/docs/charts/) service
-4. Installing and running machine learning (ML) tools to predict stability of materials - using [pySIPFENN](https://pysipfenn.readthedocs.io/en/stable/) and, if time allows, [ALIGNN](https://github.com/usnistgov/alignn)
-5. Using ML featurization and dimensionality reduction to embed materials in feature space - using [pySIPFENN](https://pysipfenn.readthedocs.io/en/stable/) with [MongoDB Charts](https://www.mongodb.com/docs/charts/) visualization
+
+<p align="center">
+  <img src="assets/MongoDBChartExample.png" width="400"/>
+</p><br>
+
+4. Installing and running machine learning (ML) tools to predict stability of materials - using [pySIPFENN](https://pysipfenn.readthedocs.io/en/stable/)
+
+<p align="center">
+  <img src="assets/neuralnetcolorized.png" width="400"/>
+</p><br>
+
+5. Using ML featurization and dimensionality reduction to embed materials in feature space and guide DFT calculations - using [pySIPFENN](https://pysipfenn.readthedocs.io/en/stable/) and [pytorch](https://pytorch.org/) libraries
+
+<p align="center">
+  <img src="assets/EmbeddingExample.png" width="400"/>
+</p><br>
 
 **The [`Lecture1.ipynb`](./Lecture1.html) Jupyter notebook covers points 1, 3 (interaction part), 4 (install part). Points 2 and 3 (visualization part) will be done outside of this environment by student during the lecture.**
 
-**The `Lecture2.ipynb` Jupyter notebook covers points 4 and 5, with some final visualization done outside of this environment.**
+**The [`Lecture2.ipynb`](./Lecture2.html) Jupyter notebook covers points 4 and 5, with some final visualization done outside of this environment.**
 
 ## How to start
 Ideally, you should follow all instructions on your personal computer, so that afterwards you have a neat setup ready to tackle future problems of your choosing or use it in your MatSE 580 final project. I strongly suggest to use [VS Code](https://code.visualstudio.com) IDE for consistency in the class and with alternative setups (see below), but you are welcome to use anyhing of your choosing.
