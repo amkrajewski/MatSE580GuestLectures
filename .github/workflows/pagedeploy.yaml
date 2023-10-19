@@ -34,7 +34,9 @@ jobs:
       - name: Convert all notebooks to markdown
         run: |
           jupyter nbconvert --to markdown --output-dir ./temp/ ./*.ipynb
+          mv temp/Lecture2_files Lecture2_files 
           jupyter nbconvert --to html --output-dir ./jupyters/ ./*.ipynb
+          cp -r assets jupyters/assets
       - name: Customize Lecture pages with headers
         run: |
           cat <(echo "---"; echo "layout: doc"; echo "title: Lecture No.1"; echo "description: (coverig tasks 1-4)"; echo "---"; echo ""; echo "**| [Main Page](./index.html) | [Lecture 1](./Lecture1.html) ([native render](./jupyters/Lecture1.html)) | [Lecture 2](./Lecture2.html) ([native render](./jupyters/Lecture2.html)) |**") ./temp/Lecture1.md > Lecture1.md
