@@ -3,6 +3,6 @@ description: Two guest lectures for MatSE580 at PSU to cover basics of (1) mater
 show_downloads: "true"
 markdown: GFM
 
-remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: Bilal2453/cayman-docs
 plugins:
 - jekyll-remote-theme 
