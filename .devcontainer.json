@@ -13,14 +13,15 @@
           "wijmo.gc-excelviewer",
           "mechatroner.vscode_rainbow_csv",
           "ms-python.python",
-          "ms-toolsai.jupyter"
+          "ms-toolsai.jupyter",
+          "hansvn.instant-mongo"
         ]
       }
     },
     "hostRequirements": {
        "cpus": 4,
        "memory": "16gb",
-       "storage": "12gb"
+       "storage": "16gb"
     },
     "onCreateCommand": "conda install -y python=3.10 jupyter numpy scipy && pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu && pip install pymatgen pysipfenn pymongo scikit-learn"
 }
