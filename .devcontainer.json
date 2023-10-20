@@ -25,5 +25,5 @@
        "memory": "16gb",
        "storage": "12gb"
     },
-    "onCreateCommand": "conda create -y -n 580demo python=3.10 jupyter numpy scipy && conda init && conda activate 580demo && pip install -y pymatgen pysipfenn pymongo scikit-learn"
+    "onCreateCommand": "conda create -y -n 580demo python=3.10 jupyter numpy scipy && conda activate 580demo && pip install -y pymatgen pysipfenn pymongo scikit-learn"
 }
