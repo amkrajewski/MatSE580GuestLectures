@@ -1,4 +1,11 @@
 # MatSE580 Guest Lectures
+
+If you are _not_ a MatSE580 student but would like to go through this workshop you can use the link below to open a pre-configured development environment with all dependencies preinstalled for you and a local in-memory MongoDB to play with.
+
+<p align="center">
+  <a href='https://codespaces.new/amkrajewski/MatSE580GuestLectures?quickstart=1'><img src='https://github.com/codespaces/badge.svg' alt='Open in GitHub Codespaces' style='max-width: 100%;'></a>
+</p><br>
+
 ## Contents
 In these two lectures, I will give in **Fall 2023 MatSE 580 (Computational Thermodynamics)** at Penn State, which together should provide students with some basic skills in:
 1. Manipulating and analyzing materials - using [pymatgen](https://github.com/materialsproject/pymatgen)
