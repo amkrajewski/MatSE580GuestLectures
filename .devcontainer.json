@@ -11,7 +11,7 @@
       "vscode": {
         "extensions": [
           "wijmo.gc-excelviewer",
-          "mechatroner.vscode_rainbow_csv",
+          "mechatroner.rainbow-csv",
           "ms-python.python",
           "ms-toolsai.jupyter",
           "hansvn.instant-mongo"
