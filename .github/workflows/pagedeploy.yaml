@@ -35,7 +35,6 @@ jobs:
       - name: Convert all notebooks to markdown
         run: |
           jupyter nbconvert --to markdown --output-dir ./temp/ ./*.ipynb
-          mv temp/Lecture2_files Lecture2_files 
           jupyter nbconvert --to html --output-dir ./jupyters/ ./*.ipynb
           cp -r assets jupyters/assets
       - name: Customize Lecture pages with headers
